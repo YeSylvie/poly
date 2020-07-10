@@ -1,0 +1,196 @@
+/** ALL - GUI **/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif!important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: 1px solid #C72956;
+    border-radius: 28px;
+    padding: 10px 0;
+}
+
+.btn-red {
+    background-color: #C72956;
+    color: #FFFFFF;
+}
+
+.btn-white {
+    background-color: #FFFFFF;
+    color: #C72956;
+}
+
+.title-co {
+    color: #C72956;
+    font-weight: 700;
+}
+
+.input-co {
+    border: none;
+    border-bottom: 1px solid #C72956;
+    width: 100%;
+    margin: 5% 0;
+}
+
+.select-co {
+    border: none;
+    border-bottom: 1px solid #C72956;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+/** MEDIA QUERIES **/
+/* Small devices (landscape phones, 320px and up) */
+@media (min-width: 320px) {
+    /** ALL - GUI **/
+    body {
+        background: url("../img/background/backgound_mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: 19px;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-size: 11px;
+        color: #000000;
+    }
+
+    .btn {
+        width: 80%;
+        margin-top: 6%;
+    }
+
+    .connexion {
+        margin-top: 85%;
+    }
+
+    .logo {
+        margin-top: 10%;
+    }
+
+    .mc {
+        text-align: center;
+    }
+
+    .mentions-contact {
+        position: relative;
+        bottom: -45px;
+    }
+
+    .mentions {
+        font-size: 12px;
+        color: #000000;
+    }
+
+    .input-co {
+        font-size: 14px;
+    }
+
+    .select-co {
+        font-size: 14px;
+    }
+
+    .row-inscription {
+        margin-bottom: 2%;
+    }
+
+    /* INDEX USERS */
+    .slogan {
+        margin-top: 5%;
+    }
+
+    /* LOGIN USERS */
+    .nav-retour {
+        display: flex;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+
+    .title-co {
+        font-size: 15px;
+        padding-top: 2%;
+        margin-left: 4%;
+    }
+
+    .card-connexion {
+        background-color: #FFFFFF!important;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 14%;
+        border-radius: 9% 9% 0 0;
+    }
+
+    /* NEW USERS */
+    .card-inscription {
+        background-color: #FFFFFF!important;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 14%;
+        border-radius: 9% 9% 0 0;
+    }
+
+    .step {
+        margin-bottom: 8%;
+    }
+
+    /* ADDIDCARD RIBS */
+    #id-card-title {
+        font-size: 14px;
+        margin: 5% auto;
+    }
+
+    #idcard {
+        margin: 15% 0;
+    }
+
+    /* REGLEMENT RIBS */
+    .reglement {
+        margin-bottom: 0!important;
+    }
+
+    .regles {
+        text-decoration: underline;
+        font-size: 11px;
+        color: #000000;
+        font-weight: 500;
+    }
+
+    /* CARTE RIBS */
+    .choix-card {
+        margin: 12% 0;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
