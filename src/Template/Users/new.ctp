@@ -6,7 +6,7 @@
 <div class="row card-inscription">
     <div class="col-sm-12">
         <div class="nav-retour">
-            <?= $this->Html->image('inscription/arrow-retour.svg', ['class' => 'img-fluid','alt' => 'Flèche de retour']) ?>
+            <?= $this->Html->image('inscription/arrow-retour.svg', ['class' => 'img-fluid','alt' => 'Flèche de retour', 'url' => ['action' => 'index']]) ?>
             <h2 class="title-co">Votre profil</h2>
         </div>
         <div class="stepper">

@@ -17,22 +17,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- STYLE CSS -->
-    <?= $this->Html->css('inscription.css') ?>
+    <?php
+    if(!$Auth->user()) {
+        echo $this->Html->css('inscription.css');
+    } else {
+        echo $this->Html->css('accueil.css');
+    }
+    ?>
 
     <!-- Javascript -->
-    <?= $this->Html->script('jQuery.js'); ?>
     <?= $this->Html->script('script.js'); ?>
 
     <?= $this->fetch('script') ?>
 </head>
 <body>
-<nav class="top-bar expanded" data-topbar role="navigation">
-
-</nav>
 <?= $this->Flash->render() ?>
-<div class="container">
+
+<?php if(!$Auth->user()) { ?>
+    <div class="container">
+        <?= $this->fetch('content') ?>
+    </div>
+<?php } else { ?>
     <?= $this->fetch('content') ?>
-</div>
+<?php } ?>
+
+
 <footer>
 </footer>
 <!-- BOOTSTRAP V4 JS -->

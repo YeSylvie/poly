@@ -41,6 +41,10 @@ class UsersController extends AppController {
         }
     } // Fin login
 
+    public function logout() {
+        return $this->redirect($this->Auth->logout());
+    } // fin logout
+
     public function home() {
 
     } // Fin home
