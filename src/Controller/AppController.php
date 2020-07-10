@@ -28,15 +28,13 @@ use Cake\Event\Event;
 class AppController extends Controller
 {
 
-    /**
-     * Initialization hook method.
-     *
-     * Use this method to add common initialization code like loading components.
-     *
-     * e.g. `$this->loadComponent('Security');`
-     *
-     * @return void
-     */
+    // actions à faire avant n'importe quelle action
+    public function beforeRender(Event $event)
+    {
+        // Transmet les donnée de connexion dans n'importe quelle vue
+        $this->set('Auth', $this->Auth);
+    } // fin beforeRender
+
     public function initialize()
     {
         parent::initialize();
@@ -46,10 +44,27 @@ class AppController extends Controller
         ]);
         $this->loadComponent('Flash');
 
-        /*
-         * Enable the following component for recommended CakePHP security settings.
-         * see https://book.cakephp.org/3.0/en/controllers/components/security.html
-         */
-        //$this->loadComponent('Security');
+        /*Partie gérant la connexion*/
+        $this->loadComponent('Auth', [
+            // dit de quel manière on se connecte
+            'authenticate' => [
+                'Form' => [
+                    'fields' => [
+                        'username' => 'mail',
+                        'password' => 'password'
+                    ]
+                ]
+            ],
+            // Sur quel emplacement
+            'loginAction' => [
+                'controller' => 'Users',
+                'action' => 'login'
+            ],
+            // où redirige-t-on si on a été bloqué
+            'unauthorizedRedirect' => $this->referer()
+        ]);
+
+        // autorise la vue de toutes les actions listées
+        $this->Auth->allow(['display', 'login', 'index']);
     }
 }
