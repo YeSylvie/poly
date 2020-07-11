@@ -72,16 +72,15 @@
             <?= $this->Html->link('Voir l\'historique', ['action' => 'home'], ['class' => 'cta-link']) ?>
             <?= $this->Html->image('menu/arrow_voir_plus.svg', ['class' => 'img-fluid', 'alt' => '', 'url' => ['action' => '']]) ?>
         </div>
-    </div>
-
-
+    </div>x
 </div>
+
 <!-- Navigation menu -->
 <nav class="nav-mobile display-none-pc text-center fixed-bottom" role="navigation">
     <ul>
         <li>
             <div>
-                <?= $this->Html->image('menu/accueil_active.png', ['class' => 'img-fluid', 'alt' => '', 'url' => ['action' => '']]) ?>
+                <?= $this->Html->image('menu/accueil_active.png', ['class' => 'img-fluid', 'alt' => 'Accueil', 'url' => ['action' => 'home']]) ?>
             </div>
             <div>
                 <?= $this->Html->link('Accueil', ['action' => 'home'], ['class' => 'active']) ?>
@@ -89,7 +88,7 @@
         </li>
         <li>
             <div>
-                <?= $this->Html->image('menu/cashback.png', ['class' => 'img-fluid', 'alt' => '', 'url' => ['action' => '']]) ?>
+                <?= $this->Html->image('menu/cashback.png', ['class' => 'img-fluid', 'alt' => 'Cashback', 'url' => ['action' => '']]) ?>
             </div>
             <div>
                 <?= $this->Html->link('Cashback', ['action' => ''], ['class' => '']) ?>
@@ -97,15 +96,15 @@
         </li>
         <li>
             <div>
-                <?= $this->Html->image('menu/analyse.png', ['class' => 'img-fluid', 'alt' => '', 'url' => ['action' => '']]) ?>
+                <?= $this->Html->image('menu/analyse.png', ['class' => 'img-fluid', 'alt' => 'Analyse', 'url' => ['controller' => 'Transactions','action' => 'analyse']]) ?>
             </div>
             <div>
-                <?= $this->Html->link('Analyse', ['action' => ''], ['class' => '']) ?>
+                <?= $this->Html->link('Analyse', ['controller' => 'Transactions','action' => 'analyse'], ['class' => '']) ?>
             </div>
         </li>
         <li>
             <div>
-                <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid', 'alt' => '', 'url' => ['action' => '']]) ?>
+                <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid', 'alt' => 'Manu', 'url' => ['action' => '']]) ?>
             </div>
             <div>
                 <?= $this->Html->link('Menu', ['action' => ''], ['class' => '']) ?>

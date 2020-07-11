@@ -16,12 +16,17 @@
     <!-- BOOTSTRAP V4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- ChartJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+
     <!-- STYLE CSS -->
     <?php
     if(!$Auth->user()) {
         echo $this->Html->css('inscription.css');
     } else {
         echo $this->Html->css('accueil.css');
+        echo $this->Html->css('analyse.css');
     }
     ?>
 
@@ -31,12 +36,51 @@
     <?= $this->fetch('script') ?>
 </head>
 <body>
+<!--<header class="">-->
+<!--    <nav id="nav" class="fixed-top display-none-mobile">-->
+<!--        <div class="container">-->
+<!--            <div class="navbar navbar-expand-lg">-->
+<!--                <a class="navbar-brand" href="#home">-->
+<!--                    <img id="logo-poly" alt="Logo Poly" class="img-fluid" src="./webroot/img/navbar/logo_poly.svg"/>-->
+<!--                </a>-->
+<!--                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"-->
+<!--                        aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                    <span class="navbar-toggler-icon">-->
+<!--                      <img id="hamburger" src="./webroot/img/navbar/burgermenu.svg" class="img-fluid" alt="Icône menu hamburger" />-->
+<!--                    </span>-->
+<!--                </button>-->
+<!--                <div class="collapse navbar-collapse" id="navbarsExample09">-->
+<!--                    <ul class="navbar-nav ml-auto">-->
+<!--                        <li class="nav-item accueil">-->
+<!--                            <a class="nav-link rouge" href="#home" onclick="nav('home')">Accueil</a>-->
+<!--                            <div class="degrad red"></div>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link menu_degrad active" href="#lacarte" onclick="nav('lacarte')">La carte</a>-->
+<!--                            <div class="degrad"></div>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link menu_degrad" href="#nosutilisateurs" onclick="nav('nosutilisateurs')">Nos utilisateurs</a>-->
+<!--                            <div class="degrad"></div>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link menu_degrad" href="#lesavantages" onclick="nav('lesavantages')">Les avantages</a>-->
+<!--                            <div class="degrad"></div>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link menu_degrad" href="#nouscontacter" onclick="nav('nouscontacter')">Newsletter</a>-->
+<!--                            <div class="degrad"></div>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</header>-->
 <?= $this->Flash->render() ?>
 
 <?php if(!$Auth->user()) { ?>
-    <div class="container">
         <?= $this->fetch('content') ?>
-    </div>
 <?php } else { ?>
     <?= $this->fetch('content') ?>
 <?php } ?>
