@@ -1,9 +1,38 @@
-<div class="container">
-    <div class="row">
-        <div class="col-6">
-            <?= $this->Html->image('logo_poly_w.png', ['class' => 'img-fluid logo', 'alt' => 'Logo Poly', 'url' => ['action' => 'home']]) ?>
+<!-- Navigation Desktop -->
+<header class="">
+    <nav id="nav" class="fixed-top display-none-mobile">
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                    <?= $this->Html->image('logo_poly_c.png', ['class' => 'img-fluid logo', 'alt' => 'Logo Poly', 'url' => ['action' => 'home']]) ?>
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <?= $this->Html->image('menu/accueil_active.png', ['class' => 'img-fluid', 'alt' => 'Accueil', 'url' => ['action' => 'home']]) ?>
+                            <?= $this->Html->link('Accueil', ['action' => 'home'], ['class' => 'active']) ?>
+                        </li>
+                        <li class="nav-item">
+                            <?= $this->Html->image('menu/cashback.png', ['class' => 'img-fluid', 'alt' => 'Cashback', 'url' => ['action' => '']]) ?>
+                            <?= $this->Html->link('Cashback', ['action' => ''], ['class' => '']) ?>
+                        </li>
+                        <li class="nav-item">
+                            <?= $this->Html->image('menu/analyse.png', ['class' => 'img-fluid', 'alt' => 'Analyse', 'url' => ['controller' => 'Transactions','action' => 'analyse']]) ?>
+                            <?= $this->Html->link('Analyse', ['controller' => 'Transactions','action' => 'analyse'], ['class' => '']) ?>
+                        </li>
+                        <li class="nav-item">
+                            <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid', 'alt' => 'Manu', 'url' => ['action' => '']]) ?>
+                            <?= $this->Html->link('Menu', ['action' => ''], ['class' => '']) ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-6">
+    </nav>
+</header>
+
+<div class="container c-body">
+    <div class="row display-none-pc">
+        <div class="col-12">
+            <?= $this->Html->image('logo_poly_w.png', ['class' => 'img-fluid logo', 'alt' => 'Logo Poly', 'url' => ['action' => 'home']]) ?>
             <?= $this->Html->image('avatar.png', ['class' => 'img-fluid avatar','alt' => 'Photo de profil', 'url' => [ 'action' => 'logout']]) ?>
         </div>
     </div>
@@ -67,12 +96,12 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row cta-row">
         <div class="col-12 text-center cta-a">
             <?= $this->Html->link('Voir l\'historique', ['action' => 'home'], ['class' => 'cta-link']) ?>
             <?= $this->Html->image('menu/arrow_voir_plus.svg', ['class' => 'img-fluid', 'alt' => '', 'url' => ['action' => '']]) ?>
         </div>
-    </div>x
+    </div>
 </div>
 
 <!-- Navigation menu -->
@@ -112,3 +141,27 @@
         </li>
     </ul>
 </nav>
+
+<style>
+    @media (min-width: 320px) {
+        body {
+            background: url("../img/background/background_degrad.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-x: center;
+        }
+    }
+
+    @media (min-width: 768px) {
+        body {
+            background-position-y: -195px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        body {
+            background-image: url("../img/background/bg_home.jpg");
+            background-position-y: 0!important;
+        }
+    }
+</style>
