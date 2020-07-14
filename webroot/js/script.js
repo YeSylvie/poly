@@ -57,7 +57,8 @@ function checkedthreebis() {
     }
 }
 
-// ChartJs
+// Navigation secondaire dans l'analyse
+
 
 
 

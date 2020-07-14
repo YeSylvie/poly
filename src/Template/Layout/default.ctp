@@ -20,6 +20,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
 
+    <!-- Animate.Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
     <!-- STYLE CSS -->
     <?php
     if(!$Auth->user()) {
@@ -27,6 +30,7 @@
     } else {
         echo $this->Html->css('accueil.css');
         echo $this->Html->css('analyse.css');
+        echo $this->Html->css('segmentation.css');
     }
     ?>
 

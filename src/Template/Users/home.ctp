@@ -33,7 +33,7 @@
     <div class="row display-none-pc">
         <div class="col-12">
             <?= $this->Html->image('logo_poly_w.png', ['class' => 'img-fluid logo', 'alt' => 'Logo Poly', 'url' => ['action' => 'home']]) ?>
-            <?= $this->Html->image('avatar.png', ['class' => 'img-fluid avatar','alt' => 'Photo de profil', 'url' => [ 'action' => 'logout']]) ?>
+            <?= $this->Html->image('deconnexion.png', ['class' => 'img-fluid avatar','alt' => 'Photo de profil', 'url' => [ 'action' => 'logout']]) ?>
         </div>
     </div>
 

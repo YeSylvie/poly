@@ -1,0 +1,222 @@
+/** MEDIA QUERIES **/
+/* Small devices (landscape phones, 320px and up) */
+@media (min-width: 320px) {
+    /** ALL - GUI **/
+
+
+    /* ANALYSE ANALYSE */
+    .col-segmentation {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .col-segmentation ul li{
+        list-style: none;
+        display: inline-block;
+    }
+
+    .col-segmentation a {
+        border: 1px solid #FF9700;
+        border-radius: 25px;
+        padding: 3px 11px;
+        background-color: #FFFFFF;
+        color: #FF9700;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .col-segmentation .active {
+        background-color: #FF9700;
+        color: #FFFFFF;
+    }
+
+    /* SEGMENTATION GLOBALE ANALYSE */
+    .carousel-inner {
+        height: 55vh;
+    }
+
+    .slides-card {
+        background-color: #FFFFFF;
+        border-radius: 3px;
+        border: 0.2px solid #C4C4C4;
+        -webkit-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        -moz-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        height: 100%;
+    }
+
+    .btn-color {
+        width: 5px;
+        height: 5px;
+        background-color: #1a1a1a;
+        border-radius: 25px;
+        background-color: #1a1a1a;
+    }
+
+    .data-bar .col-6 {
+        padding-left: 7%;
+    }
+
+    .p-bar {
+        padding-right: 7%;
+    }
+
+    .cat-bar li {
+        display: flex;
+        text-align: center;
+    }
+
+    .cat-bar img {
+        margin-right: 10%;
+    }
+
+    .cat-bar p {
+        margin-bottom: 0!important;
+        color: #21205A;
+    }
+
+    .progress {
+        background: rgba(255, 255, 255, 0.65);
+        height: 10px;
+        flex-direction: row-reverse;
+    }
+
+    .progress-orange {
+        background-color: #FF9700;
+    }
+
+    .progress-violet {
+        background-color: #BB7ED2;
+    }
+
+    .progress-rose {
+        background-color: #F0A0B7;
+    }
+
+    .progress-bleu {
+        background-color: #89C0FF;
+    }
+
+    .prix-r {
+        float: right;
+        color: #7C809E;
+        font-size: 10px;
+    }
+
+    .pl-7 {
+        padding-left: 7%;
+    }
+
+    .pr-7 {
+        padding-right: 7%;
+    }
+
+    .title-red {
+        color: #C72956;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 2%;
+    }
+
+    .cash-recolte {
+        text-align: center;
+    }
+
+    .cash-recolte p {
+        margin-bottom: 0;
+        color: #6FCF97;
+    }
+
+    .recolte-prix {
+        color: #FFFFFF!important;
+        height: 30%;
+        width: 35%;
+        background-color: #6FCF97;
+        margin: 0 auto;
+    }
+
+    /* SEGMENTATION CATEGORIE ANALYSE */
+    #carouselExampleIndicator {
+        height: 48vh;
+    }
+
+    /*.indicators .active {*/
+    /*    background-color: #FF9700;*/
+    /*}*/
+
+    .indicators li{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #C72956;
+        border-color: #1a1a1a;
+    }
+
+    .indicators {
+        top: 25%;
+    }
+
+    .indicator-orange {
+        background-color: rgb(255, 151, 0);
+    }
+
+    .cat-prix {
+        font-weight: 700;
+    }
+
+    .orange {
+        color: #FF9700;
+        font-weight: 700;
+    }
+
+    .violet {
+        color: #BB7ED2;
+        font-weight: 700;
+    }
+
+    .rose {
+        color: #F0A0B7;
+        font-weight: 700;
+    }
+
+    .bleu {
+        color: #89C0FF;
+        font-weight: 700;
+    }
+
+    .card-ns {
+        flex: initial;
+        max-width: 80%;
+        background-color: #FFFFFF;
+        border-radius: 3px;
+        border: 0.2px solid #C4C4C4;
+        margin: 1% auto;
+        -webkit-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        -moz-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+    }
+
+    .card-ns p {
+        font-size: 10px!important;
+    }
+
+    .cta-n {
+        text-align: center;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
