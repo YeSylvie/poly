@@ -24,9 +24,21 @@ a {
     color: #FFFFFF;
 }
 
+.btn-red:hover {
+    color: #FFFFFF;
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
 .btn-white {
     background-color: #FFFFFF;
     color: #C72956;
+}
+
+.btn-white:hover {
+    color: #C72956;
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
 }
 
 .title-co {
@@ -59,6 +71,11 @@ a {
     font-size: 14px;
     font-weight: 700;
 }
+
+.cta-link:hover {
+    color: #C72956;
+}
+
 
 /** MEDIA QUERIES **/
 /* Small devices (landscape phones, 320px and up) */

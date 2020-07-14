@@ -24,10 +24,23 @@ a {
     color: #FFFFFF;
 }
 
+.btn-red:hover {
+    color: #FFFFFF;
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
 .btn-white {
     background-color: #FFFFFF;
     color: #C72956;
 }
+
+.btn-white:hover {
+    color: #C72956;
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
 
 .title-co {
     color: #C72956;
@@ -364,8 +377,9 @@ a {
     }
 
     .logo {
-        width: 30%;
+        width: 45%;
         margin: 5% 0;
+        max-width: 200px;
     }
 
     .mc {
@@ -453,23 +467,23 @@ a {
     }
 
     .arrow-retour img {
-        width: 25px;
+        width: 18px;
     }
 
     .header-logo {
         margin: 0 auto;
     }
 
-    .header-logo img {
-        width: 75%;
-    }
-
     .div-form {
         padding: 8%;
     }
 
+    .stepper {
+        text-align: center;
+    }
+
     .step {
-        width: 100%;
+        width: 70%;
     }
 
     .btn-center {

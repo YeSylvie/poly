@@ -1,10 +1,8 @@
 <div class="container">
     <div class="row">
-        <div class="col-6">
+        <div class="col-12">
             <?= $this->Html->image('logo_poly_w.png', ['class' => 'img-fluid logo', 'alt' => 'Logo Poly', 'url' => ['controller' => 'Users','action' => 'home']]) ?>
-        </div>
-        <div class="col-6">
-            <?= $this->Html->image('avatar.png', ['class' => 'img-fluid avatar','alt' => 'Photo de profil', 'url' => ['controller' => 'Users', 'action' => 'logout']]) ?>
+            <?= $this->Html->image('deconnexion.png', ['class' => 'img-fluid avatar','alt' => 'Photo de profil', 'url' => ['controller' => 'Users', 'action' => 'logout']]) ?>
         </div>
     </div>
 
@@ -29,7 +27,6 @@
             <canvas id="myChart"></canvas>
         </div>
     </div>
-
 
     <!-- Dépenses / Cashback -->
     <div class="row">
@@ -172,3 +169,26 @@ var chart = new Chart(ctx, {
     }
 });
 </script>
+
+<style>
+    @media (min-width: 320px) {
+        body {
+            background: url("../img/background/background_degrad.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-x: center;
+        }
+    }
+
+    @media (min-width: 768px) {
+        body {
+            background-position-y: -195px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        body {
+        }
+    }
+</style>
+

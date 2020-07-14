@@ -2,14 +2,14 @@
 <div class="container display-none-pc">
     <div class="row">
         <div class="col-12">
-            <?= $this->Html->image('logo_poly_w.png', ['class' => 'img-fluid logo','alt' => 'Logo Poly', 'url' => ['action' => 'index']]) ?>
+            <?= $this->Html->image('logo_poly_w.png', ['class' => 'img-fluid logo','alt' => 'Logo Poly']) ?>
         </div>
     </div>
     <div class="div-center">
         <div class="row card-inscription">
             <div class="col-12 col-center">
                 <div class="nav-retour">
-                    <?= $this->Html->image('inscription/arrow-retour.svg', ['class' => 'img-fluid','alt' => 'Flèche de retour', 'url' => ['action' => 'index']]) ?>
+                    <?= $this->Html->image('inscription/arrow-retour.svg', ['class' => 'img-fluid','alt' => 'Flèche de retour', 'url' => ['controller' => 'Users', 'action' => 'index']]) ?>
                     <h2 class="title-co">Votre profil</h2>
                 </div>
                 <div class="stepper">
@@ -72,7 +72,7 @@
     <div class="form-i">
         <div class="header-form">
             <div class="arrow-retour">
-                <?= $this->Html->image('inscription/arrow-retour.svg', ['class' => 'img-fluid','alt' => 'Flèche de retour', 'url' => ['action' => 'index']]) ?>
+                <?= $this->Html->image('inscription/arrow-retour.svg', ['class' => 'img-fluid','alt' => 'Flèche de retour', 'url' => ['controller' => 'Users', 'action' => 'index']]) ?>
             </div>
             <div class="header-logo">
                 <?= $this->Html->image('logo_poly_d.png', ['class' => 'img-fluid logo','alt' => 'Logo Poly']) ?>
