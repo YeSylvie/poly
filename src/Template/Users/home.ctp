@@ -136,10 +136,39 @@
         </li>
         <li>
             <div>
-                <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid', 'alt' => 'Manu', 'url' => ['action' => '']]) ?>
+                <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid', 'alt' => 'Manu', 'onclick' => 'navtoggle()']) ?>
             </div>
             <div>
-                <?= $this->Html->link('Menu', ['action' => ''], ['class' => '']) ?>
+                <a class="navmobile-a" onclick="navtoggle2()">Menu</a>
+                <div id="menuToggle">
+                    <input type="checkbox" id="input-toggle" />
+
+                    <ul id="navToggle" class="">
+                        <li>
+                            <?= $this->Html->link('Accueil / Consultation', ['controller' => 'Users', 'action' => 'home'], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Virement', ['action' => ''], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Gestion des cartes', ['action' => ''], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Paramètres', ['action' => ''], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Parrainage', ['action' => ''], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Contact', ['action' => ''], ['class' => '']) ?>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </li>
     </ul>

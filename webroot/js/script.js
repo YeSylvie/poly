@@ -76,5 +76,24 @@ function activatetwo() {
     }
 }
 
+//Navigation toogle
+function navtoggle() {
+    const input = document.getElementById('input-toggle');
+    if(input.checked == true) {
+        input.checked = false;
+    } else {
+        input.checked = true;
+    }
+}
+
+function navtoggle2() {
+    const input = document.getElementById('input-toggle');
+    if(input.checked == true) {
+        input.checked = false;
+    } else {
+        input.checked = true;
+    }
+}
+
 
 
