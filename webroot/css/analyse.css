@@ -2,13 +2,6 @@
 /* Small devices (landscape phones, 320px and up) */
 @media (min-width: 320px) {
     /** ALL - GUI **/
-    .display-none-mobile {
-        display: none;
-    }
-
-    .display-none-pc {
-        display: block;
-    }
 
     .card-n {
         flex: initial;
@@ -39,7 +32,7 @@
     }
 
     .details p {
-        font-size: 14px;
+        font-size: 10px;
         margin: 1% 0;
     }
 
@@ -57,13 +50,6 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     /** ALL - GUI **/
-    .display-none-mobile {
-        display: none;
-    }
-
-    .display-none-pc {
-        display: block;
-    }
 
     .card-n {
         flex: initial;
@@ -112,14 +98,6 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     /** ALL - GUI **/
-    .display-none-mobile {
-        display: block;
-    }
-
-    .display-none-pc {
-        display: none!important;
-    }
-
     .nav-accueil-one {
         margin: 0;
     }

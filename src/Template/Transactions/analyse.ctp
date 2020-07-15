@@ -94,7 +94,7 @@
 
     <!-- Dépenses / Cashback -->
     <div class="row">
-        <div class="col-12 card-n animate__animated animate__slideInRight delay-2">
+        <div class="col-12 card-n">
             <div class="detail-depense">
                 <div class="details">
                     <p>Carte X0709 15/06</p>
@@ -110,7 +110,7 @@
 
     <!-- Dépenses / Cashback -->
     <div class="row">
-        <div class="col-12 card-n animate__animated animate__slideInRight delay-2">
+        <div class="col-12 card-n">
             <div class="detail-depense">
                 <div class="details">
                     <p>Carte X0709 15/06</p>
@@ -126,7 +126,7 @@
 
     <!-- Dépenses / Cashback -->
     <div class="row">
-        <div class="col-12 card-n animate__animated animate__slideInRight delay-2">
+        <div class="col-12 card-n">
             <div class="detail-depense">
                 <div class="details">
                     <p>Carte X0709 15/06</p>
