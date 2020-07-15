@@ -19,8 +19,8 @@
                             <?= $this->Html->link('Analyse', ['controller' => 'Transactions','action' => 'analyse'], ['class' => 'active']) ?>
                         </li>
                         <li class="nav-item">
-                            <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid navmobile-a', 'alt' => 'Manu', 'onclick' => 'navtoggle()']) ?>
-                            <a class="navmobile-a" onclick="navtoggle2()">Menu</a>
+                            <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid navmobile-a', 'alt' => 'Manu', 'onclick' => 'navtoggle3()']) ?>
+                            <a class="navmobile-a" onclick="navtoggle4()">Menu</a>
                         </li>
                     </ul>
                 </div>
@@ -51,6 +51,10 @@
             </li>
             <li>
                 <?= $this->Html->link('Contact', ['action' => ''], ['class' => '']) ?>
+                <div class="menu-bar"></div>
+            </li>
+            <li>
+                <?= $this->Html->link('Déconnexion', ['controller' => 'Users', 'action' => 'logout', 'class' => '']) ?>
             </li>
         </ul>
         </div>
@@ -90,10 +94,10 @@
 
     <!-- Dépenses / Cashback -->
     <div class="row">
-        <div class="col-12 card-n">
+        <div class="col-12 card-n animate__animated animate__slideInRight delay-2">
             <div class="detail-depense">
                 <div class="details">
-                    <p>Carte X0709 12/06</p>
+                    <p>Carte X0709 15/06</p>
                     <p>-74,99€</p>
                 </div>
                 <div class="details">
@@ -106,15 +110,15 @@
 
     <!-- Dépenses / Cashback -->
     <div class="row">
-        <div class="col-12 card-n">
+        <div class="col-12 card-n animate__animated animate__slideInRight delay-2">
             <div class="detail-depense">
                 <div class="details">
-                    <p>Carte X0709 12/06</p>
-                    <p>-74,99€</p>
+                    <p>Carte X0709 15/06</p>
+                    <p>-4,99€</p>
                 </div>
                 <div class="details">
-                    <p>AUCHAN</p>
-                    <p class="cash">5.89€ de cashback</p>
+                    <p>GIFI</p>
+                    <p class="cash">0.29€ de cashback</p>
                 </div>
             </div>
         </div>
@@ -122,15 +126,15 @@
 
     <!-- Dépenses / Cashback -->
     <div class="row">
-        <div class="col-12 card-n">
+        <div class="col-12 card-n animate__animated animate__slideInRight delay-2">
             <div class="detail-depense">
                 <div class="details">
-                    <p>Carte X0709 12/06</p>
-                    <p>-74,99€</p>
+                    <p>Carte X0709 15/06</p>
+                    <p>-34,27€</p>
                 </div>
                 <div class="details">
-                    <p>AUCHAN</p>
-                    <p class="cash">5.89€ de cashback</p>
+                    <p>AMAZON</p>
+                    <p class="cash">1.02€ de cashback</p>
                 </div>
             </div>
         </div>
@@ -177,7 +181,7 @@
             <div>
                 <a class="navmobile-a" onclick="navtoggle2()">Menu</a>
                 <div id="menuToggle">
-                    <input type="checkbox" id="input-toggle" />
+                    <input type="checkbox" id="input-toggle1" />
 
                     <ul id="navToggle" class="">
                         <li>
@@ -239,10 +243,10 @@
         <div class="col-6">
             <!-- Dépenses / Cashback -->
             <div class="row">
-                <div class="col-12 card-n">
+                <div class="col-12 card-n animate__animated animate__slideInDown delay-2">
                     <div class="detail-depense">
                         <div class="details">
-                            <p>Carte X0709 12/06</p>
+                            <p>Carte X0709 15/06</p>
                             <p>-74,99€</p>
                         </div>
                         <div class="details">
@@ -252,66 +256,39 @@
                     </div>
                 </div>
             </div>
+
             <!-- Dépenses / Cashback -->
             <div class="row">
-                <div class="col-12 card-n">
+                <div class="col-12 card-n animate__animated animate__slideInDown delay-2">
                     <div class="detail-depense">
                         <div class="details">
-                            <p>Carte X0709 12/06</p>
-                            <p>-74,99€</p>
+                            <p>Carte X0709 15/06</p>
+                            <p>-4,99€</p>
                         </div>
                         <div class="details">
-                            <p>AUCHAN</p>
-                            <p class="cash">5.89€ de cashback</p>
+                            <p>GIFI</p>
+                            <p class="cash">0.29€ de cashback</p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- Dépenses / Cashback -->
             <div class="row">
-                <div class="col-12 card-n">
+                <div class="col-12 card-n animate__animated animate__slideInDown delay-2">
                     <div class="detail-depense">
                         <div class="details">
-                            <p>Carte X0709 12/06</p>
-                            <p>-74,99€</p>
+                            <p>Carte X0709 15/06</p>
+                            <p>-94,26€</p>
                         </div>
                         <div class="details">
                             <p>AUCHAN</p>
-                            <p class="cash">5.89€ de cashback</p>
+                            <p class="cash">6.61€ de cashback</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Dépenses / Cashback -->
-            <div class="row">
-                <div class="col-12 card-n">
-                    <div class="detail-depense">
-                        <div class="details">
-                            <p>Carte X0709 12/06</p>
-                            <p>-74,99€</p>
-                        </div>
-                        <div class="details">
-                            <p>AUCHAN</p>
-                            <p class="cash">5.89€ de cashback</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Dépenses / Cashback -->
-            <div class="row">
-                <div class="col-12 card-n">
-                    <div class="detail-depense">
-                        <div class="details">
-                            <p>Carte X0709 12/06</p>
-                            <p>-74,99€</p>
-                        </div>
-                        <div class="details">
-                            <p>AUCHAN</p>
-                            <p class="cash">5.89€ de cashback</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 
@@ -331,14 +308,14 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet'],
+        labels: ['12', '13', '14', '15 juin', '16', '17', '18'],
         datasets: [{
             barPercentage: 0.5,
             barThickness: 6,
             maxBarThickness: 8,
             minBarLength: 2,
             backgroundColor: 'rgba(255, 255, 255, 1)',
-            data: [0, 109, 210.99, 150.36, 162.87, 147, 45]
+            data: [0, 55, 10.99, 15.36, 62.87, 47, 7]
         }]
     },
 
@@ -376,14 +353,14 @@ var chart = new Chart(ctx2, {
 
     // The data for our dataset
     data: {
-        labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet'],
+        labels: ['12', '13', '14', '15 juin', '16', '17', '18'],
         datasets: [{
             barPercentage: 0.5,
             barThickness: 6,
             maxBarThickness: 8,
             minBarLength: 2,
             backgroundColor: 'rgba(255, 255, 255, 1)',
-            data: [0, 109, 210.99, 150.36, 162.87, 147, 45]
+            data: [0, 55, 10.99, 15.36, 62.87, 47, 7]
         }]
     },
 

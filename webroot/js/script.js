@@ -76,9 +76,27 @@ function activatetwo() {
     }
 }
 
+function activatethree() {
+    const globale = document.getElementById('globale2');
+    const categorie = document.getElementById('categorie2');
+    globale.classList.add('active');
+    if (categorie.classList.contains('active')) {
+        categorie.classList.remove(('active'));
+    }
+}
+
+function activatefour() {
+    const globale = document.getElementById('globale2');
+    const categorie = document.getElementById('categorie2');
+    categorie.classList.add('active');
+    if (globale.classList.contains('active')) {
+        globale.classList.remove('active');
+    }
+}
+
 //Navigation toogle
 function navtoggle() {
-    const input = document.getElementById('input-toggle');
+    const input = document.getElementById('input-toggle1');
     if(input.checked == true) {
         input.checked = false;
     } else {
@@ -87,6 +105,24 @@ function navtoggle() {
 }
 
 function navtoggle2() {
+    const input = document.getElementById('input-toggle1');
+    if(input.checked == true) {
+        input.checked = false;
+    } else {
+        input.checked = true;
+    }
+}
+
+function navtoggle3() {
+    const input = document.getElementById('input-toggle');
+    if(input.checked == true) {
+        input.checked = false;
+    } else {
+        input.checked = true;
+    }
+}
+
+function navtoggle4() {
     const input = document.getElementById('input-toggle');
     if(input.checked == true) {
         input.checked = false;
