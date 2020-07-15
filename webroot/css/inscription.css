@@ -211,6 +211,10 @@ a {
         margin: 12% 0;
     }
 
+    .choix-card {
+        width: 80%;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
