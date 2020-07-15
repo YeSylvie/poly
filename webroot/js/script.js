@@ -58,8 +58,23 @@ function checkedthreebis() {
 }
 
 // Navigation secondaire dans l'analyse
+function activate() {
+    const globale = document.getElementById('globale');
+    const categorie = document.getElementById('categorie');
+    globale.classList.add('active');
+    if (categorie.classList.contains('active')) {
+        categorie.classList.remove(('active'));
+    }
+}
 
-
+function activatetwo() {
+    const globale = document.getElementById('globale');
+    const categorie = document.getElementById('categorie');
+    categorie.classList.add('active');
+    if (globale.classList.contains('active')) {
+        globale.classList.remove('active');
+    }
+}
 
 
 
