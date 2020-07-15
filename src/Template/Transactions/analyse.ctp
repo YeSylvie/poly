@@ -7,8 +7,8 @@
                 <div class="collapse navbar-collapse" id="navbarsExample09">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <?= $this->Html->image('menu/accueil.png', ['class' => 'img-fluid', 'alt' => 'Accueil', 'url' => ['action' => 'home']]) ?>
-                            <?= $this->Html->link('Accueil', ['action' => 'home'], ['class' => '']) ?>
+                            <?= $this->Html->image('menu/accueil.png', ['class' => 'img-fluid', 'alt' => 'Accueil', 'url' => ['controller' => 'Users','action' => 'home']]) ?>
+                            <?= $this->Html->link('Accueil', ['controller' => 'Users','action' => 'home'], ['class' => '']) ?>
                         </li>
                         <li class="nav-item">
                             <?= $this->Html->image('menu/cashback.png', ['class' => 'img-fluid', 'alt' => 'Cashback', 'url' => ['action' => '']]) ?>
@@ -147,10 +147,39 @@
         </li>
         <li>
             <div>
-                <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid', 'alt' => '', 'url' => ['action' => '']]) ?>
+                <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid', 'alt' => 'Manu', 'onclick' => 'navtoggle()']) ?>
             </div>
             <div>
-                <?= $this->Html->link('Menu', ['action' => ''], ['class' => '']) ?>
+                <a class="navmobile-a" onclick="navtoggle2()">Menu</a>
+                <div id="menuToggle">
+                    <input type="checkbox" id="input-toggle" />
+
+                    <ul id="navToggle" class="">
+                        <li>
+                            <?= $this->Html->link('Accueil / Consultation', ['controller' => 'Users', 'action' => 'home'], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Virement', ['action' => ''], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Gestion des cartes', ['action' => ''], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Paramètres', ['action' => ''], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Parrainage', ['action' => ''], ['class' => '']) ?>
+                            <div class="menu-bar"></div>
+                        </li>
+                        <li>
+                            <?= $this->Html->link('Contact', ['action' => ''], ['class' => '']) ?>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </li>
     </ul>
