@@ -2,6 +2,14 @@
 /* Small devices (landscape phones, 320px and up) */
 @media (min-width: 320px) {
     /** ALL - GUI **/
+    .display-none-mobile {
+        display: none;
+    }
+
+    .display-none-pc {
+        display: block;
+    }
+
     .card-n {
         flex: initial;
         max-width: 90%;
@@ -46,12 +54,91 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    /** ALL - GUI **/
+    .display-none-mobile {
+        display: none;
+    }
 
+    .display-none-pc {
+        display: block;
+    }
+
+    .card-n {
+        flex: initial;
+        max-width: 90%;
+        background-color: #FFFFFF;
+        border-radius: 3px;
+        border: 0.2px solid #C4C4C4;
+        margin: 1% auto;
+        -webkit-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        -moz-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        padding: 0 40px;
+    }
+
+    /* ANALYSE ANALYSE */
+    a.active{
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    .detail-depense {
+        margin: 1% 0;
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .details p {
+        font-size: 18px;
+        margin: 1% 0;
+    }
+
+    .cash {
+        font-size: 12px;
+        color: #6FCF97;
+    }
+
+    .graph-bar {
+        margin-bottom: 2%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    /** ALL - GUI **/
+    .display-none-mobile {
+        display: block;
+    }
 
+    .display-none-pc {
+        display: none!important;
+    }
+
+    .nav-accueil-one {
+        margin: 0;
+    }
+
+    .nav-accueil-one ul {
+        padding-top: 90px;
+    }
+
+    .card-pc {
+        -webkit-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        -moz-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        margin-top: 4%;
+        padding: 2% 2%;
+    }
+
+    .graph-pc {
+        background: linear-gradient(357.07deg, rgba(199, 41, 86, 0.5) -0.9%, rgba(255, 151, 0, 0.5) 126.88%);
+        background: #C72956; /* Old browsers */
+        background: -moz-linear-gradient(357.07deg, rgba(199, 41, 86, 0.5) -0.9%, rgba(255, 151, 0, 0.5) 126.88%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(357.07deg, rgba(199, 41, 86, 0.5) -0.9%, rgba(255, 151, 0, 0.5) 126.88%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(357.07deg, rgba(199, 41, 86, 0.5) -0.9%, rgba(255, 151, 0, 0.5) 126.88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

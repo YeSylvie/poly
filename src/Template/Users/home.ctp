@@ -22,6 +22,9 @@
                             <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid', 'alt' => 'Manu', 'url' => ['action' => '']]) ?>
                             <?= $this->Html->link('Menu', ['action' => ''], ['class' => '']) ?>
                         </li>
+                        <li class="nav-item">
+                            <?= $this->Html->image('deconnexion.png', ['class' => 'img-fluid avatar','alt' => 'Deconnexion', 'url' => [ 'action' => 'logout']]) ?>
+                        </li>
                     </ul>
                 </div>
             </div>
