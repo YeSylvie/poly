@@ -19,15 +19,40 @@
                             <?= $this->Html->link('Analyse', ['controller' => 'Transactions','action' => 'analyse'], ['class' => '']) ?>
                         </li>
                         <li class="nav-item">
-                            <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid', 'alt' => 'Manu', 'url' => ['action' => '']]) ?>
-                            <?= $this->Html->link('Menu', ['action' => ''], ['class' => '']) ?>
-                        </li>
-                        <li class="nav-item">
-                            <?= $this->Html->image('deconnexion.png', ['class' => 'img-fluid avatar','alt' => 'Deconnexion', 'url' => [ 'action' => 'logout']]) ?>
+                            <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid navmobile-a', 'alt' => 'Manu', 'onclick' => 'navtoggle()']) ?>
+                            <a class="navmobile-a" onclick="navtoggle2()">Menu</a>
                         </li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div id="menuToggle" class=""">
+        <input type="checkbox" id="input-toggle" />
+        <ul id="navToggle" class="">
+            <li>
+                <?= $this->Html->link('Accueil / Consultation', ['controller' => 'Users', 'action' => 'home'], ['class' => '']) ?>
+                <div class="menu-bar"></div>
+            </li>
+            <li>
+                <?= $this->Html->link('Virement', ['action' => ''], ['class' => '']) ?>
+                <div class="menu-bar"></div>
+            </li>
+            <li>
+                <?= $this->Html->link('Gestion des cartes', ['action' => ''], ['class' => '']) ?>
+                <div class="menu-bar"></div>
+            </li>
+            <li>
+                <?= $this->Html->link('Paramètres', ['action' => ''], ['class' => '']) ?>
+                <div class="menu-bar"></div>
+            </li>
+            <li>
+                <?= $this->Html->link('Parrainage', ['action' => ''], ['class' => '']) ?>
+                <div class="menu-bar"></div>
+            </li>
+            <li>
+                <?= $this->Html->link('Contact', ['action' => ''], ['class' => '']) ?>
+            </li>
+        </ul>
         </div>
     </nav>
 </header>

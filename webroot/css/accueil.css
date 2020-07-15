@@ -259,6 +259,7 @@ a {
 
     .navmobile-a {
         color: #7D7D7D!important;
+        cursor: pointer;
     }
 
     /* HOME USERS */
@@ -397,6 +398,14 @@ a {
 
     .display-none-pc {
         display: block;
+    }
+
+    #navToggle {
+        padding: 75px;
+    }
+
+    #navToggle a {
+        font-size: 22px;
     }
 
     /* NAVBAR MOBILE */
@@ -602,6 +611,11 @@ a {
 
     #navbarsExample09 a.active {
         color: #FF9700;
+    }
+
+    #navToggle {
+        top: 18px;
+        width: 30vw;
     }
 
     /* HOME USERS */
