@@ -19,8 +19,8 @@
                             <?= $this->Html->link('Analyse', ['controller' => 'Transactions','action' => 'analyse'], ['class' => '']) ?>
                         </li>
                         <li class="nav-item">
-                            <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid navmobile-a', 'alt' => 'Manu', 'onclick' => 'navtoggle()']) ?>
-                            <a class="navmobile-a" onclick="navtoggle2()">Menu</a>
+                            <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid navmobile-a', 'alt' => 'Manu', 'onclick' => 'navtoggle3()']) ?>
+                            <a class="navmobile-a" onclick="navtoggle4()">Menu</a>
                         </li>
                     </ul>
                 </div>
@@ -51,6 +51,10 @@
             </li>
             <li>
                 <?= $this->Html->link('Contact', ['action' => ''], ['class' => '']) ?>
+                <div class="menu-bar"></div>
+            </li>
+            <li>
+                <?= $this->Html->link('Déconnexion', ['controller' => 'Users', 'action' => 'logout', 'class' => '']) ?>
             </li>
         </ul>
         </div>
@@ -103,7 +107,7 @@
     <!-- Cartes -->
     <div class="row">
         <div class="col-12 text-center">
-            <?= $this->Html->image('inscription/card_one.png', ['class' => 'carte-poly', 'alt' => 'Logo Poly', 'url' => ['action' => '']]) ?>
+            <?= $this->Html->image('inscription/card_one.png', ['class' => 'carte-poly animate__animated animate__flipInY delay-1', 'alt' => 'Logo Poly', 'url' => ['action' => '']]) ?>
         </div>
     </div>
 
@@ -166,7 +170,7 @@
             <div>
                 <a class="navmobile-a" onclick="navtoggle2()">Menu</a>
                 <div id="menuToggle">
-                    <input type="checkbox" id="input-toggle" />
+                    <input type="checkbox" id="input-toggle1" />
 
                     <ul id="navToggle" class="">
                         <li>

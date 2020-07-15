@@ -15,11 +15,13 @@
         max-width: 90%;
         background-color: #FFFFFF;
         border-radius: 3px;
-        border: 0.2px solid #C4C4C4;
+        border: 0.2px solid #e5e5e5;
         margin: 1% auto;
-        -webkit-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
-        -moz-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
-        box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        -moz-box-shadow: 2px 2px 4px 0px #eee;
+        -webkit-box-shadow: 2px 2px 4px 0px #eee;
+        -o-box-shadow: 2px 2px 4px 0px #eee;
+        box-shadow: 2px 2px 4px 0px #eee;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=#eee, Direction=134, Strength=4);
     }
 
     /* ANALYSE ANALYSE */
@@ -68,11 +70,13 @@
         max-width: 90%;
         background-color: #FFFFFF;
         border-radius: 3px;
-        border: 0.2px solid #C4C4C4;
+        border: 0.2px solid #e5e5e5;
         margin: 1% auto;
-        -webkit-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
-        -moz-box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
-        box-shadow: 2px 2px 10px 3px rgba(140,140,140,0.3);
+        -moz-box-shadow: 2px 2px 4px 0px #eee;
+        -webkit-box-shadow: 2px 2px 4px 0px #eee;
+        -o-box-shadow: 2px 2px 4px 0px #eee;
+        box-shadow: 2px 2px 4px 0px #eee;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=#eee, Direction=134, Strength=4);
         padding: 0 40px;
     }
 

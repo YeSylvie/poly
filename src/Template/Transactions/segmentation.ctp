@@ -19,8 +19,8 @@
                             <?= $this->Html->link('Analyse', ['controller' => 'Transactions','action' => 'analyse'], ['class' => 'active']) ?>
                         </li>
                         <li class="nav-item">
-                            <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid navmobile-a', 'alt' => 'Manu', 'onclick' => 'navtoggle()']) ?>
-                            <a class="navmobile-a" onclick="navtoggle2()">Menu</a>
+                            <?= $this->Html->image('menu/menu.png', ['class' => 'img-fluid navmobile-a', 'alt' => 'Manu', 'onclick' => 'navtoggle3()']) ?>
+                            <a class="navmobile-a" onclick="navtoggle4()">Menu</a>
                         </li>
                     </ul>
                 </div>
@@ -51,6 +51,10 @@
             </li>
             <li>
                 <?= $this->Html->link('Contact', ['action' => ''], ['class' => '']) ?>
+                <div class="menu-bar"></div>
+            </li>
+            <li>
+                <?= $this->Html->link('Déconnexion', ['controller' => 'Users', 'action' => 'logout', 'class' => '']) ?>
             </li>
         </ul>
         </div>
@@ -209,7 +213,7 @@
                                          <span class="progress-right">
                                             <span class="progress-bar-circle"></span>
                                         </span>
-                                        <div class="progress-value">75%</div>
+                                        <div class="progress-value">55%</div>
                                     </div>
                                 </div>
                                 <div class="col-7 pr-7 text-center">
@@ -274,7 +278,7 @@
                                         <span class="progress-right">
                                             <span class="progress-bar-circle"></span>
                                         </span>
-                                        <div class="progress-value">75%</div>
+                                        <div class="progress-value">35%</div>
                                     </div>
                                 </div>
                                 <div class="col-7 pr-7 text-center">
@@ -338,7 +342,7 @@
                                         <span class="progress-right">
                                             <span class="progress-bar-circle"></span>
                                         </span>
-                                        <div class="progress-value">75%</div>
+                                        <div class="progress-value">6%</div>
                                     </div>
                                 </div>
                                 <div class="col-7 pr-7 text-center">
@@ -402,7 +406,7 @@
                                         <span class="progress-right">
                                             <span class="progress-bar-circle"></span>
                                         </span>
-                                        <div class="progress-value">75%</div>
+                                        <div class="progress-value">4%</div>
                                     </div>
                                 </div>
                                 <div class="col-7 pr-7 text-center">
@@ -499,7 +503,7 @@
             <div>
                 <a class="navmobile-a" onclick="navtoggle2()">Menu</a>
                 <div id="menuToggle">
-                    <input type="checkbox" id="input-toggle" />
+                    <input type="checkbox" id="input-toggle1" />
 
                     <ul id="navToggle" class="">
                         <li>
@@ -556,10 +560,10 @@
         <div class="col-segmentation">
             <ul>
                 <li>
-                    <?= $this->Html->link('Segmentation globale', ['action' => 'analyse'], ['class' => 'nav-3 active', 'id' => 'globale', 'data-target' => '#carouselExampleIndicators2', 'data-slide-to' => '0', 'onclick' => 'activate()']) ?>
+                    <?= $this->Html->link('Segmentation globale', ['action' => 'analyse'], ['class' => 'nav-3 active', 'id' => 'globale2', 'data-target' => '#carouselExampleIndicators2', 'data-slide-to' => '0', 'onclick' => 'activatethree()']) ?>
                 </li>
                 <li>
-                    <?= $this->Html->link('Segmentation par catégorie', ['action' => 'segmentation'], ['class' => 'nav-3', 'id' => 'categorie', 'data-target' => '#carouselExampleIndicators2', 'data-slide-to' => '1', 'onclick' => 'activatetwo()']) ?>
+                    <?= $this->Html->link('Segmentation par catégorie', ['action' => 'segmentation'], ['class' => 'nav-3', 'id' => 'categorie2', 'data-target' => '#carouselExampleIndicators2', 'data-slide-to' => '1', 'onclick' => 'activatefour()']) ?>
                 </li>
             </ul>
         </div>
@@ -662,7 +666,7 @@
                             <div class="col-12 card-n">
                                 <div class="detail-depense">
                                     <div class="details">
-                                        <p>Carte X0709 12/06</p>
+                                        <p>Carte X0709 02/06</p>
                                         <p>-74,99€</p>
                                     </div>
                                     <div class="details">
@@ -672,47 +676,50 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- Dépenses / Cashback -->
                         <div class="row">
                             <div class="col-12 card-n">
                                 <div class="detail-depense">
                                     <div class="details">
-                                        <p>Carte X0709 12/06</p>
-                                        <p>-74,99€</p>
+                                        <p>Carte X0709 06/06</p>
+                                        <p>-4,99€</p>
                                     </div>
                                     <div class="details">
-                                        <p>AUCHAN</p>
-                                        <p class="cash">5.89€ de cashback</p>
+                                        <p>GIFI</p>
+                                        <p class="cash">0.29€ de cashback</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <!-- Dépenses / Cashback -->
                         <div class="row">
                             <div class="col-12 card-n">
                                 <div class="detail-depense">
                                     <div class="details">
-                                        <p>Carte X0709 12/06</p>
-                                        <p>-74,99€</p>
+                                        <p>Carte X0709 11/06</p>
+                                        <p>-34,27€</p>
                                     </div>
                                     <div class="details">
-                                        <p>AUCHAN</p>
-                                        <p class="cash">5.89€ de cashback</p>
+                                        <p>AMAZON</p>
+                                        <p class="cash">1.02€ de cashback</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <!-- Dépenses / Cashback -->
                         <div class="row">
                             <div class="col-12 card-n">
                                 <div class="detail-depense">
                                     <div class="details">
-                                        <p>Carte X0709 12/06</p>
-                                        <p>-74,99€</p>
+                                        <p>Carte X0709 14/06</p>
+                                        <p>-76,39€</p>
                                     </div>
                                     <div class="details">
-                                        <p>AUCHAN</p>
-                                        <p class="cash">5.89€ de cashback</p>
+                                        <p>SPEEDPARK TORCY</p>
+                                        <p class="cash">4.39€ de cashback</p>
                                     </div>
                                 </div>
                             </div>
@@ -749,7 +756,7 @@
                                                 <span class="progress-right">
                                             <span class="progress-bar-circle"></span>
                                         </span>
-                                                <div class="progress-value">75%</div>
+                                                <div class="progress-value">55%</div>
                                             </div>
                                         </div>
                                     </div>
@@ -766,7 +773,7 @@
                                         <div class="col-12 card-ns">
                                             <div class="detail-depense">
                                                 <div class="details">
-                                                    <p>Carte X0709 12/06</p>
+                                                    <p>Carte X0709 2/06</p>
                                                     <p>-74,99€</p>
                                                 </div>
                                                 <div class="details">
@@ -782,12 +789,12 @@
                                         <div class="col-12 card-ns">
                                             <div class="detail-depense">
                                                 <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
+                                                    <p>Carte X0709 15/06</p>
+                                                    <p>-94.26€</p>
                                                 </div>
                                                 <div class="details">
                                                     <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
+                                                    <p class="cash">7.29€ de cashback</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -798,12 +805,12 @@
                                         <div class="col-12 card-ns">
                                             <div class="detail-depense">
                                                 <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
+                                                    <p>Carte X0709 17/06</p>
+                                                    <p>-20,23€</p>
                                                 </div>
                                                 <div class="details">
                                                     <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
+                                                    <p class="cash">1.89€ de cashback</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -814,12 +821,12 @@
                                         <div class="col-12 card-ns">
                                             <div class="detail-depense">
                                                 <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
+                                                    <p>Carte X0709 23/06</p>
+                                                    <p>-84,19€</p>
                                                 </div>
                                                 <div class="details">
                                                     <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
+                                                    <p class="cash">4.25€ de cashback</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -842,12 +849,12 @@
                                             <span class="progress-right">
                                             <span class="progress-bar-circle"></span>
                                         </span>
-                                            <div class="progress-value">75%</div>
+                                            <div class="progress-value">35%</div>
                                         </div>
                                     </div>
                                     <div class="col-12 pr-7 text-center">
                                         <?= $this->Html->image('analyse/plat.png', ['class' => '', 'alt' => '']) ?>
-                                        <p>Votre budget "<span class="violet">Restauration</span>" s'élève ce mois-ci à <span class="cat-prix">534,21€</span></p>
+                                        <p>Votre budget "<span class="violet">Restauration</span>" s'élève ce mois-ci à <span class="cat-prix">224.49€</span></p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -856,43 +863,12 @@
                                         <div class="col-12 card-ns">
                                             <div class="detail-depense">
                                                 <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
+                                                    <p>Carte X0709 10/06</p>
+                                                    <p>-24,99€</p>
                                                 </div>
                                                 <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Dépenses / Cashback -->
-                                    <div class="row">
-                                        <div class="col-12 card-ns">
-                                            <div class="detail-depense">
-                                                <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
-                                                </div>
-                                                <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Dépenses / Cashback -->
-                                    <div class="row">
-                                        <div class="col-12 card-ns">
-                                            <div class="detail-depense">
-                                                <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
-                                                </div>
-                                                <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
+                                                    <p>KFC</p>
+                                                    <p class="cash">0.89€ de cashback</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -903,12 +879,43 @@
                                         <div class="col-12 card-ns">
                                             <div class="detail-depense">
                                                 <div class="details">
-                                                    <p>Carte X0709 12/06</p>
+                                                    <p>Carte X0709 13/06</p>
+                                                    <p>-55,49€</p>
+                                                </div>
+                                                <div class="details">
+                                                    <p>DEL ARTE</p>
+                                                    <p class="cash">2.39€ de cashback</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Dépenses / Cashback -->
+                                    <div class="row">
+                                        <div class="col-12 card-ns">
+                                            <div class="detail-depense">
+                                                <div class="details">
+                                                    <p>Carte X0709 20/06</p>
+                                                    <p>-34,62€</p>
+                                                </div>
+                                                <div class="details">
+                                                    <p>USER EAT</p>
+                                                    <p class="cash">1.89€ de cashback</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Dépenses / Cashback -->
+                                    <div class="row">
+                                        <div class="col-12 card-ns">
+                                            <div class="detail-depense">
+                                                <div class="details">
+                                                    <p>Carte X0709 17/06</p>
                                                     <p>-74,99€</p>
                                                 </div>
                                                 <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
+                                                    <p>TAJ MAHAL</p>
+                                                    <p class="cash">3.01€ de cashback</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -928,12 +935,12 @@
                                             <span class="progress-right">
                                             <span class="progress-bar-circle"></span>
                                         </span>
-                                            <div class="progress-value">75%</div>
+                                            <div class="progress-value">6%</div>
                                         </div>
                                     </div>
                                     <div class="col-12 pr-7 text-center">
                                         <?= $this->Html->image('analyse/velo.png', ['class' => '', 'alt' => '']) ?>
-                                        <p>Votre budget "<span class="rose">Loisirs</span>" s'élève ce mois-ci à <span class="cat-prix">534,21€</span></p>
+                                        <p>Votre budget "<span class="rose">Loisirs</span>" s'élève ce mois-ci à <span class="cat-prix">76,39€</span></p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -942,60 +949,12 @@
                                         <div class="col-12 card-ns">
                                             <div class="detail-depense">
                                                 <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
+                                                    <p>Carte X0709 14/06</p>
+                                                    <p>-76,39€</p>
                                                 </div>
                                                 <div class="details">
                                                     <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Dépenses / Cashback -->
-                                    <div class="row">
-                                        <div class="col-12 card-ns">
-                                            <div class="detail-depense">
-                                                <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
-                                                </div>
-                                                <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Dépenses / Cashback -->
-                                    <div class="row">
-                                        <div class="col-12 card-ns">
-                                            <div class="detail-depense">
-                                                <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
-                                                </div>
-                                                <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Dépenses / Cashback -->
-                                    <div class="row">
-                                        <div class="col-12 card-ns">
-                                            <div class="detail-depense">
-                                                <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
-                                                </div>
-                                                <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
+                                                    <p class="cash">4.39€ de cashback</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1015,12 +974,12 @@
                                             <span class="progress-right">
                                             <span class="progress-bar-circle"></span>
                                         </span>
-                                            <div class="progress-value">75%</div>
+                                            <div class="progress-value">4%</div>
                                         </div>
                                     </div>
                                     <div class="col-12 pr-7 text-center">
                                         <?= $this->Html->image('analyse/sac.png', ['class' => '', 'alt' => '']) ?>
-                                        <p>Votre budget "<span class="bleu">Dépenses scolaires</span>" s'élève ce mois-ci à <span class="cat-prix">534,21€</span></p>
+                                        <p>Votre budget "<span class="bleu">Dépenses scolaires</span>" s'élève ce mois-ci à <span class="cat-prix">55,99€</span></p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -1030,11 +989,11 @@
                                             <div class="detail-depense">
                                                 <div class="details">
                                                     <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
+                                                    <p>-34,99€</p>
                                                 </div>
                                                 <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
+                                                    <p>BUREAU VALLÉE</p>
+                                                    <p class="cash">1.89€ de cashback</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1046,47 +1005,16 @@
                                             <div class="detail-depense">
                                                 <div class="details">
                                                     <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
+                                                    <p>-21,00€</p>
                                                 </div>
                                                 <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
+                                                    <p>ROUGIER & PLÉ</p>
+                                                    <p class="cash">0.89€ de cashback</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- Dépenses / Cashback -->
-                                    <div class="row">
-                                        <div class="col-12 card-ns">
-                                            <div class="detail-depense">
-                                                <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
-                                                </div>
-                                                <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Dépenses / Cashback -->
-                                    <div class="row">
-                                        <div class="col-12 card-ns">
-                                            <div class="detail-depense">
-                                                <div class="details">
-                                                    <p>Carte X0709 12/06</p>
-                                                    <p>-74,99€</p>
-                                                </div>
-                                                <div class="details">
-                                                    <p>AUCHAN</p>
-                                                    <p class="cash">5.89€ de cashback</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1336,8 +1264,8 @@ var chart = new Chart(ctx2, {
                 transform: rotate(0deg);
             }
             100%{
-                -webkit-transform: rotate(90deg);
-                transform: rotate(90deg);
+                -webkit-transform: rotate(20deg);
+                transform: rotate(20deg);
             }
         }
         @keyframes loading-4{
@@ -1346,8 +1274,8 @@ var chart = new Chart(ctx2, {
                 transform: rotate(0deg);
             }
             100%{
-                -webkit-transform: rotate(36deg);
-                transform: rotate(36deg);
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
             }
         }
         @keyframes loading-5{

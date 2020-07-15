@@ -16,9 +16,9 @@ class RibsTable extends Table {
             ->notEmpty('holder')
             ->maxLength('holder', 255)
             ->notEmpty('bic')
-            ->maxLength('bic', 11)
+            ->maxLength('bic', 255)
             ->notEmpty('iban')
-            ->maxLength('iban', 27)
+            ->maxLength('iban', 255)
             ->allowEmpty('idcard');
         return $validator;
     }
